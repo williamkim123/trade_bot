@@ -6,11 +6,11 @@ Using API to get the data: 1) https://twelvedata.com/
 '''
 
 import requests
+import os
 import time
 
+y = os.environ.get('API_Key')
 
-
-ticker = "TRP"
 # interval ='1day'
 
 
@@ -44,6 +44,5 @@ stock_price = get_stock_price(ticker, api_key)
 # close_price = stock_price['close']
 # volume = stock_price['volume']
 # name = stock_price['name']
-
 
 print(stock_data, stock_price)
